@@ -4,9 +4,60 @@
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.htm</welcome-file>
-    <welcome-file>DashboardView.jsp</welcome-file>
+    <welcome-file>login.jsp</welcome-file>
     <welcome-file>default.html</welcome-file>
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>DashboardServlet</display-name>
+    <servlet-name>DashboardServlet</servlet-name>
+    <servlet-class>controllers.DashboardServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DashboardServlet</servlet-name>
+    <url-pattern>/DashboardServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ElectricityServlet</display-name>
+    <servlet-name>ElectricityServlet</servlet-name>
+    <servlet-class>controllers.ElectricityServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ElectricityServlet</servlet-name>
+    <url-pattern>/ElectricityServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>WaterServlet</display-name>
+    <servlet-name>WaterServlet</servlet-name>
+    <servlet-class>controllers.WaterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>WaterServlet</servlet-name>
+    <url-pattern>/WaterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RecycleServlet</display-name>
+    <servlet-name>RecycleServlet</servlet-name>
+    <servlet-class>controllers.RecycleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RecycleServlet</servlet-name>
+    <url-pattern>/RecycleServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LoginController</display-name>
+    <servlet-name>LoginController</servlet-name>
+    <servlet-class>controllers.LoginController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginController</servlet-name>
+    <url-pattern>/LoginController</url-pattern>
+  </servlet-mapping>
+  
 </web-app>

@@ -14,7 +14,7 @@
 	</style>
 </head>
 <body>
-<nav class="sideBar">
+	<nav class="sideBar">
 			<div class="sideBar-header">
 				<a href="#">
 					<img src="images/MyCarbonLogo1.png" width="150" height="49">
@@ -72,9 +72,9 @@
 			<div class="content-header">
 				<div class="item">
 					<div class="title">
-						<p>Electricity</p>
+						<p>Water</p>
 						<h3>Hello, Yogaruban</h3>
-						<p>Enter Your Electricity Consumption Info</p>
+						<p>Enter Your Water Consumption Info</p>
 					</div>
 					<div class="profileBadge">
 						<a href="#">
@@ -86,8 +86,8 @@
 			</div>
 
     <div class="container mt-5">
-        <h1 class="mb-4">Electricity Consumption Form</h1>
-        <form action="electricity" method="POST" enctype="multipart/form-data">
+        <h1 class="mb-4">Water Consumption Form</h1>
+        <form action="water" method="POST" enctype="multipart/form-data">
             <!-- Total Days -->
             <div class="form-group">
                 <label for="totalDays">Total Days:</label>
@@ -114,7 +114,7 @@
 
             <!-- Upload electricity Consumption Bill -->
 			<div class="form-group">
-			    <label for="billFile">Upload electricity Consumption Bill:</label>
+			    <label for="billFile">Upload Water Consumption Bill:</label>
 			    <div class="custom-file">
 			        <input type="file" class="custom-file-input" id="billFile" name="billFile">
 			        <label class="custom-file-label" for="billFile">Choose file</label>
@@ -124,7 +124,7 @@
 
             <!-- Description of electricity Savings -->
             <div class="form-group">
-                <label for="rainwaterSavings">Description of electricity Savings:</label>
+                <label for="rainwaterSavings">Description of water Savings:</label>
                 <textarea class="form-control" id="electricitySavings" name="electricitySavings" rows="3"></textarea>
             </div>
 

@@ -1,7 +1,9 @@
 @charset "ISO-8859-1";
 
 :root{
-	--primary: #79EABA;
+	--primary: #52D3D8;
+	
+	--primary2: #79EABA;
 	--secondary: #080930;
 	--btnYellow: #FCFF59;
 	--btnRed: #FF0000;

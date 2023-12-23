@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -48,7 +49,7 @@
                 </li>
                 </li>
                 <li class="item">
-                    <a href="#">
+                    <a href="UserForm.jsp">
                         <i class="far fa-id-card icon"></i>
                         <span class="text">User Form</span>
                     </a>
@@ -86,7 +87,7 @@
 					</div>
 				</div>
 			</div>
-			
+			<div class="container mt-5">
 			<div class="content-posts">
 				
 					<h2 style="">
@@ -96,18 +97,27 @@
 					<div>
 					<h3> There are 4 types of carbon energy sources that are given priority in ensuring the sustainability of the environment is preserved. Please select a carbon footprint type below to fill in your carbon footprint usage information.</h3>
 					</div>
-					
-					<div class="row">
-					  <div class="column">
-					    <img src="images/electricityImage.jpeg" alt="Snow" width="300" height="200">
-					  </div>
-					  <div class="column">
-					    <img src="images/recycleImage.jpeg" alt="Forest" width="300" height="200">
-					  </div>
-					  <div class="column">
-					    <img src="images/waterImage.jpeg" alt="Mountains" width="300" height="200">
-					  </div>
-					</div>
+			<div class="row">
+    <div class="column">
+        <a href="dataEntryElectricity.jsp">
+            <img src="images/electricityImage.jpeg" alt="Electricity" width="300" height="200">
+        </a>
+    </div>
+    <div class="column">
+        <a href="dataEntryRecycle.jsp">
+            <img src="images/recycleImage.jpeg" alt="Recycle" width="300" height="200">
+        </a>
+    </div>
+    <div class="column">
+        <a href="dataEntryWater.jsp">
+            <img src="images/waterImage.jpeg" alt="Water" width="300" height="200">
+        </a>
+    </div>
+</div>
+</div>
+			
+			
+
 		</section>
 	</body>
 </html>

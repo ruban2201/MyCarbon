@@ -11,10 +11,12 @@
     <style>
 			<%@include file="/css/sidebarNav.css"%>
 			<%@include file="/css/style.css"%>
+			<%@include file="/css/dataEntry.css"%>
+			
 	</style>
 </head>
 <body>
-<nav class="sideBar">
+	<nav class="sideBar">
 			<div class="sideBar-header">
 				<a href="#">
 					<img src="images/MyCarbonLogo1.png" width="150" height="49">
@@ -72,9 +74,9 @@
 			<div class="content-header">
 				<div class="item">
 					<div class="title">
-						<p>Electricity</p>
+						<p>Recycle</p>
 						<h3>Hello, Yogaruban</h3>
-						<p>Enter Your Electricity Consumption Info</p>
+						<p>Enter Your Recycle Info</p>
 					</div>
 					<div class="profileBadge">
 						<a href="#">
@@ -86,51 +88,97 @@
 			</div>
 
     <div class="container mt-5">
-        <h1 class="mb-4">Electricity Consumption Form</h1>
-        <form action="electricity" method="POST" enctype="multipart/form-data">
-            <!-- Total Days -->
-            <div class="form-group">
-                <label for="totalDays">Total Days:</label>
-                <input type="number" class="form-control" id="totalDays" name="totalDays">
-            </div>
+        				<div class="center">
+					<div class="form">
+						<h3 style="margin-bottom: 20px">Recycling Activity</h3>
+						<form>
+							<table>
+								<tr>
+									<td>
+										<h5 class="note">Recyclable Materials (Plastic, Foils, Glass etc.)</h5>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for="materialWeight">Total Weight</label>
+									</td>
+									<td class="inputDivider"></td>
+									<td>
+										<label for="materialAmount">Total Amount</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="text" id="materialWeight" name="materialWeight" 
+										placeholder="e.g 30">
+									</td>
+									<td class="inputDivider"></td>
+									<td>
+										<input type="text" id="materialAmount" name="materialAmount" 
+										placeholder="e.g 30">
+									</td>
+								</tr>
+								
+								<tr>
+									<td>
+										<h5 class="note">Used Cooking Oil</h5>
+									</td>
+								</tr>
+								
+								<tr>
+									<td>
+										<label for="oilWeight">Total Weight</label>
+									</td>
+									<td class="inputDivider"></td>
+									<td>
+										<label for="oilAmount">Total Amount</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="text" id="oilWeight" name="oilWeight" 
+										placeholder="e.g 30">
+									</td>
+									<td class="inputDivider"></td>
+									<td>
+										<input type="text" id="oilAmount" name="oilAmount" 
+										placeholder="e.g 30">
+									</td>
+								</tr>
+								
+								<tr>
+									<td>
+										<label for="activityPic">Pictures of Activity</label>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="3">
+										<input type="file" id="activityPic" name="activityPic" accept="image/*">
+									</td>
+								</tr>
+								
+								<tr>
+									<td>
+										<label for="activityDesc">Describe what did you recycle and how in detail</label>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="3">
+										<textarea rows="20" cols="90" name="activityDesc" 
+										placeholder="e.g I kept every plastic bottle I got from joining events and send it to the recycling centre in bulk."></textarea>
+									</td>
+								</tr>
+							</table>
+						</form>
+					</div>
+				</div>
 
-            <!-- Prorate Factor -->
-            <div class="form-group">
-                <label for="prorateFactor">Prorate Factor:</label>
-                <input type="number" step="0.01" class="form-control" id="prorateFactor" name="prorateFactor">
-            </div>
-
-            <!-- Current Usage -->
-            <div class="form-group">
-                <label for="currentUsage">Current Usage:</label>
-                <input type="number" step="0.01" class="form-control" id="currentUsage" name="currentUsage">
-            </div>
-
-            <!-- Current Amount -->
-            <div class="form-group">
-                <label for="currentAmount">Current Amount:</label>
-                <input type="number" step="0.01" class="form-control" id="currentAmount" name="currentAmount">
-            </div>
-
-            <!-- Upload electricity Consumption Bill -->
-			<div class="form-group">
-			    <label for="billFile">Upload electricity Consumption Bill:</label>
-			    <div class="custom-file">
-			        <input type="file" class="custom-file-input" id="billFile" name="billFile">
-			        <label class="custom-file-label" for="billFile">Choose file</label>
-			    </div>
+				<div class="right">
+					<input type="button" value="Save">
+				</div>
 			</div>
-
-
-            <!-- Description of electricity Savings -->
-            <div class="form-group">
-                <label for="rainwaterSavings">Description of electricity Savings:</label>
-                <textarea class="form-control" id="electricitySavings" name="electricitySavings" rows="3"></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-    </div>
+			
+    
     <!-- Include Bootstrap JS and jQuery here -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
