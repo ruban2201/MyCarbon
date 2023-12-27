@@ -67,14 +67,14 @@
 <body>
     <div class="center">
         <h1>MyCarbon</h1>
-        <h3>Login Page</h3>
-        <form action="login" method="post">
+        <h3>Admin Login Page</h3>
+        <form action="loginAdmin" method="post">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
             <input type="submit" value="Login">
-            <a href="loginAdmin.jsp">Login As An Admin</a>
+            <a href="login.jsp">Login As An User</a>
         </form>
     </div>
 </body>

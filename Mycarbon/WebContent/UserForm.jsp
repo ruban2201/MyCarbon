@@ -39,7 +39,7 @@
                 </li>
                 </li>
                 <li class="item">
-                    <a href="#">
+                    <a href="userProfile.jsp">
                         <i class="fas fa-user-alt icon"></i>
                         <span class="text">Profile</span>
                     </a>

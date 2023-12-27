@@ -14,6 +14,9 @@
 			<%@include file="/css/sidebarNav.css"%>
 			<%@include file="/css/dashboardContent.css"%>
 			<%@include file="/css/style.css"%>
+			<%@include file="/css/profile.css"%>
+			
+		
 		</style>
 	</head>
 	<body>
@@ -29,7 +32,7 @@
 			
 			<ul class="items">
                 <li class="item active">
-                    <a href="DashboardView.jsp">
+                    <a href="adminDashboard.jsp">
                         <i class="fa-solid fa-house fa icon"></i>
                         <span class="text">Home</span>
                     </a>
@@ -42,23 +45,9 @@
                 </li>
                 </li>
                 <li class="item">
-                    <a href="userProfile.jsp">
+                    <a href="#">
                         <i class="fas fa-user-alt icon"></i>
                         <span class="text">Profile</span>
-                    </a>
-                </li>
-                </li>
-                <li class="item">
-                    <a href="UserForm.jsp">
-                        <i class="far fa-id-card icon"></i>
-                        <span class="text">User Form</span>
-                    </a>
-                </li>
-                </li>
-                <li class="item">
-                    <a href="#">
-                        <i class="fa fa-upload icon"></i>
-                        <span class="text">Uploads</span>
                     </a>
                 </li>
                 <li class="divider"></li>
@@ -72,52 +61,26 @@
 		</nav>
 		
 		<section class="content">
-			<div class="content-header">
-				<div class="item">
-					<div class="title">
-						<p>Dashboard</p>
-						<h3>Hello, Yogaruban</h3>
-						<p>Check out what's new today</p>
-					</div>
-					<div class="profileBadge">
-						<a href="#">
-							<span>Yogaruban</span>
-							<img src="images/UserIcon.jpeg" width="150" height="49">
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="container mt-5">
-			<div class="content-posts">
-				
-					<h2 style="">
-						Choose a Carbon Footprint Type
-					</h2>
-					</div>
-					<div>
-					<h3> There are 4 types of carbon energy sources that are given priority in ensuring the sustainability of the environment is preserved. Please select a carbon footprint type below to fill in your carbon footprint usage information.</h3>
-					</div>
-			<div class="row">
-    <div class="column">
-        <a href="dataEntryElectricity.jsp">
-            <img src="images/electricityImage.jpeg" alt="Electricity" width="300" height="200">
-        </a>
+<div class="container">
+    <div class="header">
+        <h2>Admin Profile</h2>
     </div>
-    <div class="column">
-        <a href="dataEntryRecycle.jsp">
-            <img src="images/recycleImage.jpeg" alt="Recycle" width="300" height="200">
-        </a>
-    </div>
-    <div class="column">
-        <a href="dataEntryWater.jsp">
-            <img src="images/waterImage.jpeg" alt="Water" width="300" height="200">
-        </a>
-    </div>
-</div>
-</div>
-			
-			
 
-		</section>
+    <div class="profile-section">
+        <div class="profile-picture">
+            <img src="images/Admin.png" alt="Admin Avatar">
+        </div>
+        <div class="profile-details">
+            <h3>Tharani Seenivasan</h3>
+            <p>Email: admin@example.com</p>
+            <p>Role: Administrator</p>
+        </div>
+    </div>
+
+    <div class="logout-section">
+        <b href="logout.jsp">Logout</b>
+    </div>
+</div>
+
 	</body>
 </html>
